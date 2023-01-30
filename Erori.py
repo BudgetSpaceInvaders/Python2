@@ -168,7 +168,18 @@ rez2 = str5.rfind("f")
 if str5.count("f") == 1:
     print(rez1)
 elif str5.count("f") >= 2:
-    print(rez1, rez2)"""
+    print(rez1, rez2)
 
 
-
+#Statement 6
+str6 = input("Please write a sentence here --> ")
+fcnt = str6.count("f")
+if fcnt >= 2:
+    rez3 = str6.find("f")
+    rez4 = str6.find("f", rez3+1)
+    print("The second occurrence of the letter f appears on the index", rez4)
+if fcnt == 1:
+    rez3 = str6.find("f")
+    print("-1")
+if fcnt == 0:
+    print("-2")"""
