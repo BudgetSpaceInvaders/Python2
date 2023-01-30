@@ -182,4 +182,16 @@ if fcnt == 1:
     rez3 = str6.find("f")
     print("-1")
 if fcnt == 0:
-    print("-2")"""
+    print("-2")
+
+
+#Statement 7
+str7 = input("Please write a sentence here in which h occurs at least twice --> ")
+rez5 = str7.count("h")
+if rez5 >= 2:
+    rez6 = str7.find("h")
+    rez7 = str7.rfind("h")
+    print(str7[0:rez6], end="")
+    print(str7[rez7+1:len(str7)])
+else:
+    print("Please insert a sentence that has at least 2 occurrences of the letter h")"""
