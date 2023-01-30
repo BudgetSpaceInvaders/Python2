@@ -107,6 +107,7 @@ while oper > 0:
     print(ecuatie)
 
 
+#Statement 1
 str1 = input(str("Please write a sentence here --> "))
 print(str1[2])
 print(str1[-2])
@@ -127,11 +128,13 @@ print("")
 print(len(str1))
 
 
+#Statement 2
 str2 = input(str("Please write a sentence here --> "))
 ras = str2.count(" ") + 1
 print("There are", ras, "words in this sentence")
 
 
+#Statement 3
 str3 = input(str("Please write a sentence here --> "))
 rezo = len(str3)
 rezol = rezo // 2
@@ -142,24 +145,30 @@ else:
     print(str3[0:rezol+1])
     print(str3[rezol+1:len(str3)])
 
-str4 = input("Please write a sentence here --> ")
-rezolv = (len(str4)+1)//2
-print(str4[rezolv:len(str4)], end="")
-print(str4[0:rezolv])
+
+
+str33 = input("Please write a sentence here --> ")
+rezolv = (len(str33)+1)//2
+print(str33[rezolv:len(str33)], end="")
+print(str33[0:rezolv])
 
 print(s[(len(s) + 1) // 2:] + s[:(len(s) + 1) // 2])
 
+#Statement 4
+str4 = input("Please write a sentence here --> ")
+rezolva = str4.index(" ")
+print(str4[rezolva+1:len(str4)], end=" ")
+print(str4[0:rezolva])
 
+
+#Statement 5
 str5 = input("Please write a sentence here --> ")
-rezolva = str5.index(" ")
-print(str5[rezolva+1:len(str5)], end=" ")
-print(str5[0:rezolva])"""
-
-
-str6 = input("Please write a sentence here --> ")
-rez1 = str6.find("f")
-rez2 = str6.rfind("f")
-if str6.count("f") == 1:
+rez1 = str5.find("f")
+rez2 = str5.rfind("f")
+if str5.count("f") == 1:
     print(rez1)
-elif str6.count("f") >= 2:
-    print(rez1, rez2)
+elif str5.count("f") >= 2:
+    print(rez1, rez2)"""
+
+
+
