@@ -195,3 +195,4 @@ if rez5 >= 2:
     print(str7[rez7+1:len(str7)])
 else:
     print("Please insert a sentence that has at least 2 occurrences of the letter h")"""
+
