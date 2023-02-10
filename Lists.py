@@ -1,8 +1,8 @@
-#Task 1
 """
+#Task 1
 # Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 #You may assume that each input would have exactly one solution, and you may not use the same element twice.
-#You can return the answer in any order."""
+#You can return the answer in any order.
 
 target = input("Enter a number: ")
 lenum = int(input("How many numbers do you want to check if they add to the number " + target + " --> "))
@@ -20,3 +20,31 @@ for x in range(0, len(nums)):
         print(x)
         print(nums.index(z))
         break
+
+
+#Task 2
+lennum = int(input("How many variables will be in your list --> "))
+list123 = []
+while lennum > 0:
+    fallsen = int(input("Please enter a number: "))
+    list123.append(fallsen)
+    lennum -= 1
+for x in range(0, lennum-1):
+    if list123[x] < 0 and list123[x+1] < 0:
+        print(list123[x], list123[x+1])
+    if list123[x] > 0 and list123[x + 1] > 0:
+        print(list123[x], list123[x + 1])
+
+#Task 3
+lenlist10 = int(input("How many variables will be in your list --> "))
+list10 = []
+for x in range(0, lenlist10):
+    apple = int(input("Please enter a number: "))
+    list10.append(apple)
+    lenlist10 -= 1
+curnum = ""
+list11 = []
+for x in range(0, len(list10)-1):
+    if list10[x] < list10[x+1]:
+        list11.append(list10[x+1])
+print(list11)"""
