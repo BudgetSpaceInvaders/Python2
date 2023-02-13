@@ -46,7 +46,7 @@ for ix in range(len(the_string)):
     print(the_string[ix], end=' ')
 
 print()
-"""
+
 # Slices
 
 alpha = "abdefg"
@@ -57,4 +57,4 @@ print(alpha[:3])
 print(alpha[3:-2])
 print(alpha[-3:4])
 print(alpha[::2])
-print(alpha[1::2])
+print(alpha[1::2])"""
