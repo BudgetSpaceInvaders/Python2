@@ -14,3 +14,12 @@ print(len(empty))
 
 i_am = 'I\'m'
 print(len(i_am))
+
+str1 = 'a'
+str2 = 'b'
+
+print(str1 + str2)
+print(str2 + str1)
+#The asterisk makes the string be replicated as many times as the number it is multiplied with
+print(5 * 'a')
+print('b' * 4)
