@@ -65,11 +65,26 @@ print("Alpha".capitalize())
 print('ALPHA'.capitalize())
 print(' Alpha'.capitalize())
 print('123'.capitalize())
-print("αβγδ".capitalize())"""
+print("αβγδ".capitalize())
 
 
 # Demonstrating the center() method:
 print('[' + 'alpha'.center(10) + ']')
 print('[' + 'Beta'.center(2) + ']')
 print('[' + 'Beta'.center(4) + ']')
-print('[' + 'Beta'.center(6) + ']')
+print('[' + 'Beta'.center(6) + ']')"""
+
+
+# Example 1: Demonstrating the islower() method:
+print("Moooo".islower())
+print('moooo'.islower())
+
+# Example 2: Demonstrating the isspace() method:
+print(' \n '.isspace())
+print(" ".isspace())
+print("mooo mooo mooo".isspace())
+
+# Example 3: Demonstrating the isupper() method:
+print("Moooo".isupper())
+print('moooo'.isupper())
+print('MOOOO'.isupper())
