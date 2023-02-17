@@ -72,7 +72,7 @@ print("αβγδ".capitalize())
 print('[' + 'alpha'.center(10) + ']')
 print('[' + 'Beta'.center(2) + ']')
 print('[' + 'Beta'.center(4) + ']')
-print('[' + 'Beta'.center(6) + ']')"""
+print('[' + 'Beta'.center(6) + ']')
 
 
 # Example 1: Demonstrating the islower() method:
@@ -87,4 +87,8 @@ print("mooo mooo mooo".isspace())
 # Example 3: Demonstrating the isupper() method:
 print("Moooo".isupper())
 print('moooo'.isupper())
-print('MOOOO'.isupper())
+print('MOOOO'.isupper())"""
+
+
+# Demonstrating the join() method:
+print(",".join(["omicron", "pi", "rho"]))
