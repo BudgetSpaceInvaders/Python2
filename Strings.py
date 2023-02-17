@@ -58,3 +58,12 @@ print(alpha[3:-2])
 print(alpha[-3:4])
 print(alpha[::2])
 print(alpha[1::2])"""
+
+
+#Capitalize
+print("Alpha".capitalize())
+print('ALPHA'.capitalize())
+print(' Alpha'.capitalize())
+print('123'.capitalize())
+print("αβγδ".capitalize())
+
