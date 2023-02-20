@@ -87,8 +87,26 @@ print("mooo mooo mooo".isspace())
 # Example 3: Demonstrating the isupper() method:
 print("Moooo".isupper())
 print('moooo'.isupper())
-print('MOOOO'.isupper())"""
+print('MOOOO'.isupper())
 
 
 # Demonstrating the join() method:
-print(",".join(["omicron", "pi", "rho"]))
+print(",".join(["omicron", "pi", "rho"]))"""
+
+
+def mysplit(strng):
+    strng = strng.lstrip()
+    x = " "
+    words = []
+    y = 0
+    for z in range(0, len(strng)):
+        if strng[z] == x:
+            words.append(strng[y:z])
+            y = z + 1
+    return words
+
+print(mysplit("To be or not to be, that is the question"))
+print(mysplit("To be or not to be,that is the question"))
+print(mysplit("   "))
+print(mysplit(" abc "))
+print(mysplit(""))
