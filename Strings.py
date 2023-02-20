@@ -91,7 +91,7 @@ print('MOOOO'.isupper())
 
 
 # Demonstrating the join() method:
-print(",".join(["omicron", "pi", "rho"]))"""
+print(",".join(["omicron", "pi", "rho"]))
 
 
 def mysplit(strng):
@@ -109,4 +109,4 @@ print(mysplit("To be or not to be, that is the question"))
 print(mysplit("To be or not to be,that is the question"))
 print(mysplit("   "))
 print(mysplit(" abc "))
-print(mysplit(""))
+print(mysplit(""))"""
