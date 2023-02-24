@@ -110,3 +110,10 @@ print(mysplit("To be or not to be,that is the question"))
 print(mysplit("   "))
 print(mysplit(" abc "))
 print(mysplit(""))"""
+
+#Homework: Fiecare sarcina separat dau commit and push
+#https://www.geeksforgeeks.org/multi-dimensional-lists-in-python/
+nr1 = [["#"],["#"],["#"]]
+for x in range(0, len(nr1)):
+    for y in range(0, len(nr1(x))):
+        print(nr1[x][y], end = " ")
