@@ -123,7 +123,7 @@ matrice = [[1, 2, 3],
            [4, 5, 6],
            [7, 8, 9]]
 valoare = matrice[1][2] # rândul 2 este al doilea element al listei principale, iar coloana 3 este al treilea element al listei din acel rând
-print(valoare) # 6"""
+print(valoare) # 6
 
 
 nrt = int(input("Please write a number here --> "))
@@ -136,4 +136,19 @@ else:
     for x in range(1, nrt+1):
         for y in range(1, 10):
             print(x*y, end=" ")
-        print()
+        print()"""
+
+
+#nrdz = input("Please write a sequence of numbers: ")
+x0 = ["###", "# #", "# #", "# #", "###"]
+x1 = [" # ", " # ", " # ", " # ", " # "]
+x2 = ["###", "  #", "###", "#  ", "###"]
+x3 = ["###", "  #", "###", "  #", "###"]
+x4 = ["# #", "# #", "###", "  #", "  #"]
+x5 = ["###", "#  ", "###", "  #", "###"]
+x6 = ["###", "#  ", "###", "# #", "###"]
+x7 = ["###", "  #", "  #", "  #", "  #"]
+x8 = ["###", "# #", "###", "# #", "###"]
+x9 = ["###", "# #", "###", "  #", "###"]
+for i in range(len(x1)):
+  print(x0[i],x1[i],x2[i], x3[i], x4[i], x5[i], x6[i], x7[i], x8[i], x9[i])
