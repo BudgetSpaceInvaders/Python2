@@ -109,7 +109,7 @@ print(mysplit("To be or not to be, that is the question"))
 print(mysplit("To be or not to be,that is the question"))
 print(mysplit("   "))
 print(mysplit(" abc "))
-print(mysplit(""))"""
+print(mysplit(""))
 
 #Homework: Fiecare sarcina separat dau commit and push
 #https://www.geeksforgeeks.org/multi-dimensional-lists-in-python/
@@ -117,3 +117,23 @@ nr1 = [["#"],["#"],["#"]]
 for x in range(0, len(nr1)):
     for y in range(0, len(nr1(x))):
         print(nr1[x][y], end = " ")
+
+
+matrice = [[1, 2, 3],
+           [4, 5, 6],
+           [7, 8, 9]]
+valoare = matrice[1][2] # rândul 2 este al doilea element al listei principale, iar coloana 3 este al treilea element al listei din acel rând
+print(valoare) # 6"""
+
+
+nrt = int(input("Please write a number here --> "))
+if nrt == 0:
+    print("   1  2  3  4  5  6  7  8  9  0")
+if nrt < 0:
+    print("Please write a number above 0.")
+else:
+    print("  1 2 3 4 5 6 7 8 9 0")
+    for x in range(1, nrt+1):
+        for y in range(1, 10):
+            print(x*y, end=" ")
+        print()
