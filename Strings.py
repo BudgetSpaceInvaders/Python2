@@ -176,7 +176,7 @@ def display_digit(num):
     for row in rows:
         print(row)  # print the final display
 
-display_digit(7325)"""
+display_digit(7325)
 
 
 optsel = int(input("Would you like to cipher(1) or to decipher(2): "))
@@ -198,4 +198,31 @@ if optsel == 2:
             citext += y
         else:
             citext += chr(ord(y)-keycode)
-print(citext)
+print(citext)"""
+
+
+# IBAN Validator.
+
+iban = input("Enter IBAN, please: ")
+iban = iban.replace(' ','')
+
+if not iban.isalnum():
+    print("You have entered invalid characters.")
+elif len(iban) < 15:
+    print("IBAN entered is too short.")
+elif len(iban) > 31:
+    print("IBAN entered is too long.")
+else:
+    iban = (iban[4:] + iban[0:4]).upper()
+    iban2 = ''
+    for ch in iban:
+        if ch.isdigit():
+            iban2 += ch
+        else:
+            iban2 += str(10 + ord(ch) - ord('A'))
+    iban = int(iban2)
+    if iban % 97 == 1:
+        print("IBAN entered is valid.")
+    else:
+        print("IBAN entered is invalid.")
+
