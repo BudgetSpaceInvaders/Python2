@@ -136,7 +136,7 @@ else:
     for x in range(1, nrt+1):
         for y in range(1, 10):
             print(x*y, end=" ")
-        print()"""
+        print()
 
 
 #nrdz = input("Please write a sequence of numbers: ")
@@ -176,4 +176,26 @@ def display_digit(num):
     for row in rows:
         print(row)  # print the final display
 
-display_digit(7325)
+display_digit(7325)"""
+
+
+optsel = int(input("Would you like to cipher(1) or to decipher(2): "))
+keycode = int(input("What will be the key of the cipher: "))
+citext = ""
+if optsel == 1:
+    plain = input("Please write a message to be encrypted: ")
+    for x in plain:
+        if x == " ":
+            citext += x
+        else:
+            citext += chr(ord(x)+keycode)
+
+
+if optsel == 2:
+    plain2 = input("Please write a message to be decrypted: ")
+    for y in plain2:
+        if y == " ":
+            citext += y
+        else:
+            citext += chr(ord(y)-keycode)
+print(citext)
