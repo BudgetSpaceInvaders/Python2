@@ -1,3 +1,4 @@
+import sys
 """
 # # Example 1
 
@@ -198,7 +199,7 @@ if optsel == 2:
             citext += y
         else:
             citext += chr(ord(y)-keycode)
-print(citext)"""
+print(citext)
 
 
 # IBAN Validator.
@@ -224,5 +225,22 @@ else:
     if iban % 97 == 1:
         print("IBAN entered is valid.")
     else:
-        print("IBAN entered is invalid.")
+        print("IBAN entered is invalid.")"""
 
+
+plain = input("Please write a message to be encrypted: ")
+keycode = int(input("What will be the key of the cipher(1-25): "))
+if keycode > 0 and keycode < 26:
+    pass
+else:
+    print("Please print a number between 1 and 25 as the key code!")
+    sys.exit()
+citext = ""
+for x in plain:
+    if x == " ":
+        citext += x
+    elif not x.isalpha():
+        citext += x
+    else:
+        citext += chr(ord(x)+keycode)
+print(citext)
