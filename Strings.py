@@ -282,7 +282,7 @@ while True:
         print("Invalid shift value. Please enter a number between 1 and 25.")
 
 encrypted = caesar_cipher(text, shift)
-print("Encrypted text: ", encrypted)"""
+print("Encrypted text: ", encrypted)
 
 
 def palchecker(word):
@@ -296,4 +296,4 @@ def palchecker(word):
 word = input("Please write a palindrome: ")
 word = word.replace(" ", "")
 word = word.lower()
-palchecker(word)
+palchecker(word)"""
