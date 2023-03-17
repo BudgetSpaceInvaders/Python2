@@ -1,5 +1,5 @@
-import sys
-"""
+"""import sys
+
 # # Example 1
 
 word = 'by'
@@ -256,7 +256,7 @@ for x in plain:
             citext += chr(122)
         elif not x.isalpha() and y == x and x.isupper():
             citext += chr(90)
-print(citext)"""
+print(citext)
 
 
 def caesar_cipher(text, shift):
@@ -282,4 +282,18 @@ while True:
         print("Invalid shift value. Please enter a number between 1 and 25.")
 
 encrypted = caesar_cipher(text, shift)
-print("Encrypted text: ", encrypted)
+print("Encrypted text: ", encrypted)"""
+
+
+def palchecker(word):
+    revword = word[::-1]
+    if word == revword:
+        print("It's a palindrome")
+    else:
+        print("It's not a palindrome")
+
+
+word = input("Please write a palindrome: ")
+word = word.replace(" ", "")
+word = word.lower()
+palchecker(word)
