@@ -1,4 +1,4 @@
-strin = input("Please type a word here: ")
+"""strin = input("Please type a word here: ")
 lstrin = input("Please type a sequence of letters that will verify if there is the first word in this sentence: ")
 letlis = []
 for x in strin:
@@ -28,4 +28,19 @@ else:
 #     if rword < lword:
 #         rword = lword
 #     else:
-#         lstrin = lstrin[0:x:len(lstrin)]
+#         lstrin = lstrin[0:x:len(lstrin)]"""
+
+
+# Ask the user for the two strings
+word = input("Enter a word: ")
+combination = input("Enter a combination of characters: ")
+
+# Check if the characters in the word are hidden in the combination
+i = -1
+for letter in word:
+    i = combination.find(letter, i + 1)
+    if i == -1:
+        print("No, the characters are not hidden.")
+        break
+else:
+    print("Yes, the characters are hidden.")
