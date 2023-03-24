@@ -1,3 +1,5 @@
+import sys
+
 optsel = int(input("Would you like to cipher(1) or to decipher(2): "))
 keycode = int(input("What will be the key of the cipher: "))
 citext = ""
@@ -7,8 +9,7 @@ if optsel == 1:
         if x == " ":
             citext += x
         else:
-            citext += chr(ord(x)+keycode)
-
+            citext += chr(ord(x) + keycode)
 
 if optsel == 2:
     plain2 = input("Please write a message to be decrypted: ")
@@ -16,9 +17,8 @@ if optsel == 2:
         if y == " ":
             citext += y
         else:
-            citext += chr(ord(y)-keycode)
+            citext += chr(ord(y) - keycode)
 print(citext)
-
 
 plain = input("Please write a message to be encrypted: ")
 keycode = int(input("What will be the key of the cipher(1-25): "))
@@ -35,7 +35,7 @@ for x in plain:
     elif not x.isalpha():
         citext += x
     else:
-        x = chr(ord(x)+1)
+        x = chr(ord(x) + 1)
         if x.isalpha() and y != x:
             y += 1
         elif not x.isalpha() and x.isupper():
@@ -52,7 +52,7 @@ print(citext)
 
 
 def caesar_cipher(text, shift):
-    #Encrypts text using a Caesar cipher with a variable shift value.
+    # Encrypts text using a Caesar cipher with a variable shift value.
     encrypted = ""
     for char in text:
         if char.isalpha():
@@ -63,6 +63,7 @@ def caesar_cipher(text, shift):
         else:
             encrypted += char
     return encrypted
+
 
 text = input("Enter text to encrypt: ")
 while True:

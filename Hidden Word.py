@@ -7,7 +7,7 @@ for x in strin:
 
 for x in range(len(letlis)):
     rword = lstrin.find(letlis[x])
-    lword = lstrin.find(letlis[x+1])
+    lword = lstrin.find(letlis[x + 1])
     if rword < lword:
         rword = lword
     else:

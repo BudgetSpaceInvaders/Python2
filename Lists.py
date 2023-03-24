@@ -49,8 +49,7 @@ for x in range(0, len(list10)-1):
         list11.append(list10[x+1])
 print(list11)"""
 
-
-#Task 4
+# Task 4
 lenlist12 = int(input("How many variables will be in your list --> "))
 list12 = []
 for x in range(0, lenlist12):

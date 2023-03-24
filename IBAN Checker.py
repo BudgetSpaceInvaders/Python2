@@ -1,7 +1,7 @@
 # IBAN Validator.
 
 iban = input("Enter IBAN, please: ")
-iban = iban.replace(' ','')
+iban = iban.replace(' ', '')
 
 if not iban.isalnum():
     print("You have entered invalid characters.")
