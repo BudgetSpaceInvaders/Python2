@@ -5,10 +5,27 @@ for x in strin:
     if x.isalpha():
         letlis.append(x)
 
-for x in range(len(letlis)):
-    rword = lstrin.find(letlis[x])
-    lword = lstrin.find(letlis[x + 1])
-    if rword < lword:
-        rword = lword
+ordin = []
+
+for x in range(0, len(letlis)):
+    ch = lstrin.find(letlis[x])
+    if ch != -1:
+        ordin.append(ch)
     else:
-        lstrin = lstrin[0:x:len(lstrin)]
+        print("There isn't the hidden word")
+        break
+
+ordins = sorted(ordin)
+
+if ordin == ordins:
+    print("There is the hidden word")
+else:
+    print("There isn't the hidden word")
+
+# for x in range(0, len(letlis)-1):
+#     rword = lstrin.find(letlis[x])
+#     lword = lstrin.rfind(letlis[x])
+#     if rword < lword:
+#         rword = lword
+#     else:
+#         lstrin = lstrin[0:x:len(lstrin)]
