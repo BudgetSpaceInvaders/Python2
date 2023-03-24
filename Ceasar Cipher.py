@@ -1,3 +1,25 @@
+optsel = int(input("Would you like to cipher(1) or to decipher(2): "))
+keycode = int(input("What will be the key of the cipher: "))
+citext = ""
+if optsel == 1:
+    plain = input("Please write a message to be encrypted: ")
+    for x in plain:
+        if x == " ":
+            citext += x
+        else:
+            citext += chr(ord(x)+keycode)
+
+
+if optsel == 2:
+    plain2 = input("Please write a message to be decrypted: ")
+    for y in plain2:
+        if y == " ":
+            citext += y
+        else:
+            citext += chr(ord(y)-keycode)
+print(citext)
+
+
 plain = input("Please write a message to be encrypted: ")
 keycode = int(input("What will be the key of the cipher(1-25): "))
 if keycode > 0 and keycode < 26:
