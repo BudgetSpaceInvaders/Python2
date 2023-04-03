@@ -1,4 +1,5 @@
 import random
+import sys
 # n = 3
 # m = 3
 # massiv =[[0]*n]
@@ -18,8 +19,17 @@ massiv = [[int(j) for j in input("Enter the data :").split()] for i in range(d)]
 
 for row in massiv:
     for elem in row:
-        print(elem, end=" ")
+        if elem > 0 and elem <= d:
+            print(elem, end=" ")
+        else:
+            print("Please write the data to be between the numbers 0 and the number of the dimension you chose next time!")
+            sys.exit()
     print()
+
+# for row in massiv:
+#     for elem in row:
+#         print(elem, end=" ")
+#     print()
 
 def RowChecker():
     for row in massiv:
