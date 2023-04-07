@@ -1,5 +1,6 @@
 import random
 import sys
+
 # n = 3
 # m = 3
 # massiv =[[0]*n]
@@ -22,9 +23,11 @@ for row in massiv:
         if elem > 0 and elem <= d:
             print(elem, end=" ")
         else:
-            print("Please write the data to be between the numbers 0 and the number of the dimension you chose next time!")
+            print(
+                "Please write the data to be between the numbers 0 and the number of the dimension you chose next time!")
             sys.exit()
     print()
+
 
 # for row in massiv:
 #     for elem in row:
@@ -41,6 +44,7 @@ def RowChecker():
             return False
     return Sudoku
 
+
 def ColChecker():
     for row in range(d):
         col_set = set()
@@ -52,6 +56,7 @@ def ColChecker():
             return False
     return Sudok2
 
+
 def SudokuChecker():
     r = RowChecker()
     c = ColChecker()
@@ -61,4 +66,6 @@ def SudokuChecker():
         print("This is a Sudoku!")
     else:
         print("This isn't a Sudoku!")
+
+
 SudokuChecker()
