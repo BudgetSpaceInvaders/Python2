@@ -10,4 +10,15 @@ try:
         string = string + string
         print(len(string))
 except MemoryError:
-    print('This is not funny!')"""
+    print('This is not funny!')
+
+from math import exp
+
+ex = 1
+
+try:
+    while True:
+        print(exp(ex))
+        ex *= 2
+except OverflowError:
+    print('The number is too big.')"""
