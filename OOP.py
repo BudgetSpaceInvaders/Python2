@@ -16,3 +16,17 @@ class Example:
 bob = Example()
 bob.healthCheck(60, 1.70)
 bob.printimc()
+
+class ExampleCopii(Example):
+    varsta = 0
+    def ageChecker(self, varsta):
+        adultage = 18
+        if varsta >= 18:
+            print("You are an adult")
+        else:
+            print("You are still a child")
+
+ion = ExampleCopii()
+ion.healthCheck(10, .70)
+ion.ageChecker(5)
+ion.printimc()
