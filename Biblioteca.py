@@ -30,3 +30,18 @@ Book1.estevalid()
 Book1.imprumut()
 Book1.intoarcere()
 Book1.imprumut()
+
+
+class Cititor:
+    def __init__(self, nume, prenume, age, cod, datorie):
+        self.nume = nume
+        self.prenume = prenume
+        self.age = age
+        self.cod = cod
+        self.datorie = datorie
+
+    def cartiluate(self):
+        if self.datorie == True:
+            print("Cititorul", self.prenume, self.nume, "are datorii")
+        else:
+            print("Cititorul", self.prenume, self.nume, "nu are datorii")
