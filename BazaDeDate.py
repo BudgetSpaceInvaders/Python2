@@ -22,8 +22,8 @@ cursor.execute(create_table_query)
 
 insert_query1 = """
 INSERT INTO carti (titlu, autor, an_publicare, pret)
-VALUES ('Mândrie și prejudecată', 'Jane Austen', 1813, 150)
-"""
+VALUES ('Mândrie și prejudecată', 'Jane Austen', 1813, 150)"""
+
 cursor.execute(insert_query1)
 
 # Exemplu 2
