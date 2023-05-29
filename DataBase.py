@@ -1,5 +1,6 @@
 import sqlite3
 
+
 class Persoane:
     def __init__(self):
         self.conn = sqlite3.connect('exemplu.db')
@@ -14,15 +15,23 @@ class Persoane:
     def adauga(self, nume, varsta):
         self.cursor.execute(f"INSERT INTO persoane (nume, varsta) VALUES ('{nume}', {varsta})")
         self.conn.commit()
+
     def show(self):
         self.cursor.execute("SELECT * FROM persoane")
         print(self.cursor.fetchall())
+
     def sterge(self, id):
         self.cursor.execute(f"DELETE FROM persoane WHERE id = {id}")
         self.conn.commit()
+
     def update(self, id, nume, varsta):
         self.cursor.execute(f"UPDATE persoane SET nume = '{nume}', varsta = {varsta} WHERE id = {id}")
         self.conn.commit()
+
+    def drop(self):
+        self.cursor.execute("DROP TABLE persoane")
+        self.conn.commit()
+
 
 # Exemplu de utilizare
 persoane = Persoane()
@@ -32,4 +41,4 @@ persoane.update(1, "Vasile", 33)
 persoane.show()
 persoane.sterge(2)
 persoane.show()
-
+persoane.drop()
