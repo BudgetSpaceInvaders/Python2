@@ -24,11 +24,18 @@ class Library:
     def adder(self, book):
         self.books.append(book)
 
-    def remove(self, book):
-        self.books = self.books.remove(book)
+    def remove(self, query):
+        result = self.finder(query)
+        if len(result) > 0:
+            for book in result:
+                self.books.remove(book)
+            print("The book was deleted succesfully.")
+        else:
+            print("There wasn't any book found.")
 
     def show(self):
-        return self.books
+        for book in self.books:
+            print(f"Title: {book.getTitle()}, Author: {book.getAuthor()}, Year: {book.getYear()}")
 
     def finder(self, prompt):
         result = []
@@ -51,9 +58,8 @@ library.adder(book2)
 library.adder(book3)
 library.adder(book4)
 library.show()
-all_books = library.show()
-for book in all_books:
-    print(f"Title: {book.getTitle()}, Author: {book.getAuthor()}, Year: {book.getYear()}")
 resulting = library.finder("Mark Twain")
 for book in resulting:
     print(f"Title: {book.getTitle()}, Author: {book.getAuthor()}, Year: {book.getYear()}")
+library.remove("Mark Twain")
+library.show()
