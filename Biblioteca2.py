@@ -46,7 +46,7 @@ class Library:
 
 
 library = Library()
-book1 = Book("Aventurile lui Tom Sawyer", "Mark Twain", 2017)
+book1 = Book("The adventures of Tom Sawyer", "Mark Twain", 2017)
 book2 = Book("Harry Potter and the Philosopher's Stone", "J.K. Rowling", 1997)
 book3 = Book("The Chronicles of Narnia", "C.S. Lewis", 1950)
 book4 = Book("1984", "George Orwell", 1949)
