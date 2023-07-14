@@ -51,8 +51,10 @@ class Zoo:
         self.animals.remove(animal)
 
     def show_animals(self):
+        print("=======================")
         for animal in self.animals:
             print(f"Name: {animal.get_name()}, Age: {animal.get_age()}, Sound: {animal.make_sound()}")
+        print("=======================")
 
 
 lion1 = Lion("Simba", 10, "male")
@@ -69,3 +71,12 @@ penguin1 = Penguin("Pingu", 13, False)
 penguin1.make_sound()
 penguin1.get_age()
 penguin1.get_name()
+
+zoo = Zoo()
+zoo.add_animal(lion1)
+zoo.add_animal(elephant1)
+zoo.add_animal(penguin1)
+zoo.show_animals()
+# It works, but I don't want to remove any animals
+# zoo.remove_animal(elephant1)
+# zoo.show_animals()
