@@ -1,0 +1,6 @@
+f = open("nou.txt", "a")
+f.write("Hello, world!\n")
+f.close()
+f = open("nou.txt", "r")
+print(f.read())
+f.close()
