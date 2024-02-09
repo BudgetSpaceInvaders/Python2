@@ -5,8 +5,15 @@ def pig_latin(word):
         word += "way"
     else:
         word = word[1:] + word[0] + "ay"
-    word = word.capitalize()
     return word
 
 
-print(pig_latin("Highway"))
+sentence = "Pig Latin is a strange and abnormal language!"
+
+last = sentence[-1]
+if last == "!" or last == "." or last == "?":
+    sentence = sentence[:-1]
+list1 = sentence.split()
+translated_words = [pig_latin(word) for word in list1]
+sentence = ' '.join(translated_words).capitalize() + last
+print(sentence)
