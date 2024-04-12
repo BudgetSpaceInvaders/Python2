@@ -1,0 +1,1 @@
+https://manuale.edu.ro/manuale/Clasa%20a%20VII-a/Informatica%20si%20TIC/U0MgRURJVFVSQSBESURB/

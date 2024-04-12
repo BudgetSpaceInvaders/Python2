@@ -29,3 +29,35 @@ if guessed_numbers == ticket:
     print("Against all odds, you won!")
 else:
     print("You lost! Better luck next time!")
+
+
+# def generate_lottey_numbers():
+#     return set(sorted(random.sample(range(1, 50), 6)))
+#
+# import random
+#
+#
+# def generate_lottey_numbers():
+#     return set(sorted(random.sample(range(1, 50), 6)))
+#
+#
+# def check_ticket(played_numbers, winning_numbers):
+#     return sorted(set(played_numbers)) == winning_numbers
+#
+#
+# lottery_numbers = generate_lottey_numbers()
+# print("Welcome to the lottery!")
+# user_input = input("Enter your 6 numbers separated by spaces: ")
+# # user_numbers = list(map(int, user_input.split()))
+# try:
+#     user_numbers = [int(num) for num in user_input.split()]
+# except ValueError:
+#     print("Please enter only numbers.")
+#     exit(1)
+# if len(user_numbers) != 6:
+#     print("Please enter exactly 6 numbers.")
+#     exit(1)
+# if check_ticket(user_numbers, lottery_numbers):
+#     print("Congratulations! You won the lottery!")
+# else:
+#     print("Sorry, you did not win this time.")
